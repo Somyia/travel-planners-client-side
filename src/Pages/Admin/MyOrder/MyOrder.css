@@ -1,0 +1,16 @@
+.travel-table{
+    border: 1px solid #747e97;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+@media screen and (max-width: 668px){
+    .travel-table{
+        font-size: 11px;
+        padding: 5px;
+    }
+    .travel-table .travel-btn{
+        font-size: 11px;
+        padding: 7px;
+    }
+}

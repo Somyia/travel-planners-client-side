@@ -1,0 +1,22 @@
+/* orders style */
+.no-banner-section .banner{
+    display: none;
+}
+.no-banner-section .header-bottom{
+    position: relative;
+    background-color: rgba(32, 40, 61, 0.904);
+
+}
+.travel-form{
+    width: 60%;
+    margin: 0 auto;
+}
+.travel-form input, .travel-form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #65718f;
+    
+}

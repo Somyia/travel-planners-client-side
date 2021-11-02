@@ -1,0 +1,34 @@
+/* footer style  */
+.band-name{
+    font-weight: 900;
+}
+.footer-info{
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.7;
+}
+.footer-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-menu li{
+    margin-bottom: 10px;
+}
+.nav-link, .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+.nav-link:hover , .footer-menu a:hover{
+    opacity: .7;
+    color: #fff;
+}
+.footer-links i.fab{
+    border: 1px solid #fff;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+text-align: center;
+line-height: 27px;
+}

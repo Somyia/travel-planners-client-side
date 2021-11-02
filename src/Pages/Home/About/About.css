@@ -1,0 +1,33 @@
+/* title style  */
+.title h1{
+    text-align: center;
+    font-weight: 700;
+    color: #121827;
+}
+
+/* about us style  */
+.about-image{
+    border: 1px solid #121827;
+    padding: 5px;
+}
+.about-text{
+    line-height: 1.7;
+}
+.travel-btn{
+    background-color: #121827;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+}
+.travel-btn:hover{
+    color: #121827;
+    border: 1px solid #121827;
+    background-color: transparent;
+}
+
+@media screen and (max-width:668px){
+    .title h1{
+        font-size: 20px;
+    }
+    
+}

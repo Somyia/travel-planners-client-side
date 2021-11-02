@@ -1,0 +1,26 @@
+.card{
+    padding: 7px;
+    margin-top: 20px;
+}
+.card-title{
+    color: #101627;
+    font-weight: 500;
+}
+.card-body{
+    height: 300px;
+}
+.muted{
+    color: gray;
+}
+.card-text{
+    color: #353a49;
+    font-size: 15px;
+}
+.card-footer{
+    border:none;
+}
+@media screen and (max-width:668px){
+    .card-body{
+        height: 250px;
+    }
+}
