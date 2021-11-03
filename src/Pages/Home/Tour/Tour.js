@@ -13,7 +13,7 @@ const Tour = (props) => {
                 <Card.Img style={{ height: '200px' }} variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    <small className="muted mb-3"><i class="far fa-calendar-alt"></i>  {fromDate}-{toDate}</small>
+                    <small className="muted mb-3"><i className="far fa-calendar-alt"></i>  {fromDate}-{toDate}</small>
                     <Card.Text className="mt-3">
                         {desc}
                     </Card.Text>

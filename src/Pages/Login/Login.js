@@ -4,7 +4,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Banner from '../Home/Banner/Banner';
 const Login = () => {
-    const { signInWithGoogle } = useAuth();
+    const { signInWithGoogle, setIsLoading } = useAuth();
     const location = useLocation();
     const redirect_uri = location.state?.from || '/home';
     const history = useHistory();
@@ -14,6 +14,7 @@ const Login = () => {
             .then(result => {
                 history.push(redirect_uri);
             })
+            .finally(() => setIsLoading(false))
     }
     return (
         // login section 

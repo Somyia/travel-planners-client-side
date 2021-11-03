@@ -16,7 +16,7 @@ const Review = () => {
                     <Card className="review-card animate__animated animate__slideInUp">
                         <div className="review-text">
                             <div>
-                                <i class="fas fa-quote-left"></i>
+                                <i className="fas fa-quote-left"></i>
                             </div>
                                 The sightseeing and activities were better than we even thought! I still can’t believe we did so much in such a short time
                             </div>
@@ -31,7 +31,7 @@ const Review = () => {
                     <Card className="review-card animate__animated animate__slideInUp">
                         <div className="review-text">
                             <div>
-                                <i class="fas fa-quote-left"></i>
+                                <i className="fas fa-quote-left"></i>
                             </div>
                                 I had a wonderful time during the trip. The guide was informative, friendly and attentive to our entire groupI had a wonderful time during the trip.
                             </div>
@@ -46,7 +46,7 @@ const Review = () => {
                     <Card className="review-card animate__animated animate__slideInUp">
                         <div className="review-text">
                             <div>
-                                <i class="fas fa-quote-left"></i>
+                                <i className="fas fa-quote-left"></i>
                             </div>
                                 Always enjoyed my stay with Hilton Hotel and Resorts, top class room service and rooms have great outside views
                             </div>

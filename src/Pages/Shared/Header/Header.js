@@ -44,7 +44,7 @@ const Header = () => {
                                 <i className="fab fa-pinterest-p"></i>
                             </Nav.Link>
                             <Nav.Link href="#">
-                                <i class="fab fa-youtube"></i>
+                                <i className="fab fa-youtube"></i>
                             </Nav.Link>
                         </Nav>
 
