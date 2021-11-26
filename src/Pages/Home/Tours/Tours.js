@@ -10,7 +10,7 @@ const Tours = () => {
     const [tours, setTours] = useState([]);
 
     useEffect(() => {
-        fetch('https://agile-mountain-23601.herokuapp.com/tours')
+        fetch('https://guarded-crag-94849.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => {
                 setTours(data)

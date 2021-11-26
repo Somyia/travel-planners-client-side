@@ -7,7 +7,7 @@ import './NewService.css';
 const NewService = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('https://agile-mountain-23601.herokuapp.com/tours', {
+        fetch('https://guarded-crag-94849.herokuapp.com/tours', {
             method: "post",
             headers: {
                 'content-type': 'application/json'

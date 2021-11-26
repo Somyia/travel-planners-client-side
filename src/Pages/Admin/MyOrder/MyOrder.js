@@ -9,7 +9,7 @@ const MyOrder = () => {
     const { user } = useAuth();
     const [orders, setOrders] = useState([]);
     const handleCancleOrder = id => {
-        const url = `https://agile-mountain-23601.herokuapp.com/orders/${id}`;
+        const url = `https://guarded-crag-94849.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: "delete"
         })
@@ -21,7 +21,7 @@ const MyOrder = () => {
             })
     }
     useEffect(() => {
-        fetch('https://agile-mountain-23601.herokuapp.com/orders')
+        fetch('https://guarded-crag-94849.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [orders]);

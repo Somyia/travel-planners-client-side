@@ -14,14 +14,14 @@ const Orders = () => {
 
     const [tour, setTour] = useState({});
     useEffect(() => {
-        const url = `https://agile-mountain-23601.herokuapp.com/tours/${tourId}`;
+        const url = `https://guarded-crag-94849.herokuapp.com/tours/${tourId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTour(data))
     }, [])
 
     const onSubmit = data => {
-        fetch('https://agile-mountain-23601.herokuapp.com/orders', {
+        fetch('https://guarded-crag-94849.herokuapp.com/orders', {
             method: "post",
             headers: {
                 'content-type': 'application/json'
