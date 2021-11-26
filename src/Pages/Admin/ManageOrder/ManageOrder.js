@@ -4,6 +4,7 @@ import Banner from '../../Home/Banner/Banner';
 
 const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
+
     const handleApprove = id => {
         const url = `https://agile-mountain-23601.herokuapp.com/orders/${id}`;
         fetch(url, {
