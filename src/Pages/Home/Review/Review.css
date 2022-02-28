@@ -1,15 +1,19 @@
 /* customer review style  */
 .review-card{
     border: none;
+    border-radius: 25px;
+    box-shadow:0px 0px 15px 0px rgb(0 0 0 / 5%);
+    background-color: rgba(240, 244, 248, 0.884);
+    padding: 30px;
 }
 .review-text{
-    border: 1px solid rgb(192, 189, 189);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 25px;
+    color: rgba(0,0,0,.5);
+    text-align: justify;
+    font-size: 14px;
 }
 .review-text > div{
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px
 }
 .review-text i{
@@ -19,13 +23,18 @@
 }
 .review-card-bottom{
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 .review-card-bottom img{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
+    margin-right: 10px;
+}
+.review-card-bottom h5{
+    color:  rgb(16, 22, 39);
+    font-size: 15px;
+    font-weight: 500;
 }
 @media screen and (max-width: 668px){
     .review-text > div{
