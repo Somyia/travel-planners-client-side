@@ -47,7 +47,7 @@ const Banner = () => {
                     <Carousel.Item interval={5000} className="single-slide">
                         <img
                             className="d-block w-100 img-fluid"
-                            src="https://i.ibb.co/ZgH4wyn/banner-1.jpg"
+                            src="https://iili.io/1vEzF4.jpg"
                             alt="First slide"
                         />
                         <div className="overlay">
@@ -66,7 +66,7 @@ const Banner = () => {
                         {/* single banner  */}
                         <img
                             className="d-block w-100 img-fluid"
-                            src="https://i.ibb.co/ZgH4wyn/banner-1.jpg"
+                            src="https://iili.io/1vEoPf.jpg"
                             alt="Second slide"
                         />
                         <div className="overlay">
@@ -84,7 +84,7 @@ const Banner = () => {
                         {/* single banner  */}
                         <img
                             className="d-block w-100 img-fluid"
-                            src="https://i.ibb.co/ypZB7ZP/banner-3.jpg"
+                            src="https://iili.io/1vEIcl.jpg"
                             alt="Third slide"
                         />
                         <div className="overlay">

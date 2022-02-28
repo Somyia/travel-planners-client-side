@@ -9,18 +9,31 @@
 .about-image{
     border: 1px solid #121827;
     padding: 5px;
+    overflow: hidden;
+}
+
+.about-image img{
+    transition: 1s;
+}
+
+.about-image img:hover{
+    transform: scale(1.1);
 }
 .about-text{
     line-height: 1.7;
+    text-align: justify;
 }
 .travel-btn{
-    background-color: #121827;
+    background-color: #19191a;
     color: #fff;
     padding: 10px 15px;
+    font-weight: 500;
+    font-size: 18px;
     border: 1px solid transparent;
 }
 .travel-btn:hover{
     color: #121827;
+    font-weight: 500;
     border: 1px solid #121827;
     background-color: transparent;
 }
