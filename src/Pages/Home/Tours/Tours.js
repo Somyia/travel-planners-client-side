@@ -36,13 +36,13 @@ const Tours = () => {
         <>
             < div id="tours" >
                 {/* featured tours section  */}
-                < Container className="py-lg-5 py-3" >
+                < Container fluid className="py-lg-5 py-3" >
                     <Row>
                         <div className="title">
                             <h1>Featured Tours</h1>
                         </div>
                     </Row>
-                    <Row className="mt-lg-4 mt-2">
+                    <Row className="mt-lg-4 mt-2 g-3">
                         {
                             tours.map(tour => <Tour key={tour._id} tour={tour}></Tour>)
                         }

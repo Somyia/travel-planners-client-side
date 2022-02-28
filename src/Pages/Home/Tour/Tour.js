@@ -9,28 +9,35 @@ const Tour = (props) => {
     return (
         // single tour section 
         <div className="col-md-4 card-style">
-            <Card className="animate__animated animate__slideInUp">
-                <Card.Img style={{ height: '200px' }} variant="top" src={img} />
-                <Card.Body>
-                    <Card.Title>{name}</Card.Title>
-                    <small className="muted mb-3"><i className="far fa-calendar-alt"></i>  {fromDate}-{toDate}</small>
-                    <Card.Text className="mt-3">
-                        {desc}
-                    </Card.Text>
-                    <h5>Price : ${price}</h5>
-                </Card.Body>
-                <Card.Footer>
-                    <Link to={`/tours/${_id}`}>
-                        <button className="btn travel-btn">Book Now</button>
-                    </Link>
-                </Card.Footer>
-            </Card>
+            <Card className="animate__animated animate__slideInUp border-0 m-0">
+                <div className="tour-card-top" >
+                    <div className="tour-card-img">
+                        <Card.Img style={{ height: '350px' }} className="img-fluid" variant="top" src={img} />
+                    </div>
 
-            {/* <img src= alt="" />
-            <h2></h2>
-            <p></p>
-            <h5></h5>
-             */}
+                    <div className="tour-card-title">
+                        <Card.Title className="tour-title" variant="bottom">{name}</Card.Title>
+                        <div className="tour-card-body">
+                            <Card.Body>
+                                <small className="muted my-2"><i className="far fa-calendar-alt"></i>  {fromDate} TO {toDate}</small>
+                                <Card.Text className="mt-2">
+                                    {desc.slice(0, 100)}
+                                </Card.Text>
+                                <h5>Price : ${price}</h5>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Link to={`/tours/${_id}`}>
+                                    <button className="btn travel-btn tour-card-btn">Book Now</button>
+                                </Link>
+                            </Card.Footer>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </Card>
         </div >
     );
 };
