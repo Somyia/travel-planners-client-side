@@ -6,7 +6,11 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: '#121827', color: '#fff' }}>
+        <div className="travel-footer">
+            <div className="overlay footer-overlay">
+
+            </div>
+
             <Container className="py-5">
                 <Row>
                     <div className="col-md-4">
@@ -17,7 +21,7 @@ const Footer = () => {
                     </div>
                     <div className="col-md-4">
                         <div className="footer-menu">
-                            <h3>Useful Links</h3>
+                            <h3 className="text-white">Useful Links</h3>
                             <ul>
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="/home#about">About</a></li>
@@ -28,7 +32,7 @@ const Footer = () => {
                     </div>
                     <div className="col-md-4">
                         <div>
-                            <h3>Contact Us</h3>
+                            <h3 className="text-white">Contact Us</h3>
                             <Nav>
                                 <Nav.Link href="#" className="link">
                                     <FontAwesomeIcon icon={faEnvelope} /> mailto@travel_planner.com
@@ -62,7 +66,7 @@ const Footer = () => {
                     <small style={{ color: '#ccc' }} className="text-center mt-5">copyright by travel planner 2021</small>
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 };
 

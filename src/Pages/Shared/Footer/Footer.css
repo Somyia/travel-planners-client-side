@@ -1,10 +1,20 @@
 /* footer style  */
+.travel-footer{
+    background-image: url('https://iili.io/EJGPPp.jpg');
+    background-size: cover;
+    position: relative;
+    z-index:;
+    color: #fff;
+}
+.footer-overlay{
+    background-color: rgb(39, 45, 73);
+}
 .band-name{
     font-weight: 900;
 }
 .footer-info{
     font-size: 14px;
-    color: #ccc;
+    color: #fff;
     line-height: 1.7;
 }
 .footer-menu ul{
