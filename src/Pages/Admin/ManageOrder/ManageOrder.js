@@ -61,7 +61,6 @@ const ManageOrder = () => {
                                             <th>Order Name</th>
                                             <th>From</th>
                                             <th>To</th>
-                                            <th>Price</th>
                                             <th>Status</th>
                                             <th>Approved</th>
                                         </tr>
@@ -74,7 +73,7 @@ const ManageOrder = () => {
                                                 <td>{order.orderedTour}</td>
                                                 <td>{order.fromDate}</td>
                                                 <td>{order.toDate}</td>
-                                                <td>{order.orderedPrice}</td>
+
                                                 <td>{order.status}</td>
                                                 <td><button className="btn travel-btn" onClick={() => handleApprove(order._id)}>Approve</button></td>
 
