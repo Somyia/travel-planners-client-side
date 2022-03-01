@@ -55,8 +55,8 @@ const ManageOrder = () => {
                     {
                         orders.length != 0 ?
                             <div className="travel-table animate__animated animate__fadeInUp">
-                                <Table responsive="lg">
-                                    <thead>
+                                <Table responsive="lg" hover striped>
+                                    <thead className="table-header">
                                         <tr>
                                             <th>Order Name</th>
                                             <th>From</th>
@@ -75,7 +75,7 @@ const ManageOrder = () => {
                                                 <td>{order.toDate}</td>
 
                                                 <td>{order.status}</td>
-                                                <td><button className="btn travel-btn" onClick={() => handleApprove(order._id)}>Approve</button></td>
+                                                <td><button className="btn travel-btn travel-order-btn" onClick={() => handleApprove(order._id)}>Approve</button></td>
 
                                             </tr>)
                                         }

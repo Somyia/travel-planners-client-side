@@ -1,8 +1,16 @@
 .travel-table{
-    border: 1px solid #747e97;
-    padding: 10px;
     border-radius: 10px;
     
+}
+.table-header{
+    background-color: #000; 
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+.travel-table-btn, .travel-order-btn{
+    padding: 5px 10px;
+    font-size: 15px;
 }
 @media screen and (max-width: 668px){
     .travel-table{

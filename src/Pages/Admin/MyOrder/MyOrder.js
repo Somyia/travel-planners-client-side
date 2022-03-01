@@ -61,8 +61,8 @@ const MyOrder = () => {
 
 
                             <div className="travel-table animate__animated animate__fadeInUp">
-                                <Table responsive="lg" hover>
-                                    <thead>
+                                <Table responsive="lg" hover striped>
+                                    <thead className="table-header">
                                         <tr>
                                             <th>Order Name</th>
                                             <th>From</th>
@@ -81,7 +81,7 @@ const MyOrder = () => {
                                                 <td>{order.fromDate}</td>
                                                 <td>{order.toDate}</td>
                                                 <td>{order.orderedPrice}</td>
-                                                <td><button className="btn travel-btn" onClick={() => handleCancleOrder(order._id)}>Cancle</button></td>
+                                                <td><button className="btn travel-btn travel-table-btn" onClick={() => handleCancleOrder(order._id)}>Cancle</button></td>
 
                                             </tr>)
                                         }
