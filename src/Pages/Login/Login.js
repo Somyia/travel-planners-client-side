@@ -1,13 +1,17 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Banner from '../Home/Banner/Banner';
+import { useForm } from 'react-hook-form';
+import './Login.css';
+
 const Login = () => {
     const { signInWithGoogle, setIsLoading } = useAuth();
     const location = useLocation();
     const redirect_uri = location.state?.from || '/home';
     const history = useHistory();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const handleGoogleSignIn = () => {
         signInWithGoogle()
@@ -25,10 +29,26 @@ const Login = () => {
 
             <Container className="py-5">
                 <Row>
-                    <div className="title text-center" >
-                        <h1>Please Login</h1>
-                        <button className="btn travel-btn mt-4" onClick={handleGoogleSignIn}>Google Sign In</button>
-                    </div>
+                    <Col md={{ span: 6, offset: 3 }}>
+                        <Card className="login-card">
+                            <div className="travel form login-form animate__animated animate__fadeInUp">
+                                <form>
+                                    <div>
+
+                                        <input defaultValue="" placeholder="Your Name" {...register("name", { required: true })} />
+                                    </div>
+                                    <div>
+                                        <input placeholder="Email" type="email" defaultValue="" {...register("email", { required: true })} />
+
+                                    </div>
+                                    <div>
+                                        <input placeholder="Password" type="password" defaultValue="" {...register("password", { required: true })} />
+                                    </div>
+                                    <input className="travel-btn login-btn" type="submit" value="Login" />
+                                </form>
+                            </div>
+                        </Card>
+                    </Col>
                 </Row>
 
             </Container >

@@ -1,0 +1,21 @@
+.login-card{
+    box-shadow: 2px 10px 15px rgb(0 0 0 / 20%);
+}
+.login-form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #dae1e7;
+    height: 45px;
+    color: #5e6d77;
+    box-shadow: none;
+}
+.form-control .login-form input:focus{
+    border-color: #1f1f2f;
+    outline: none;
+}
+input.login-btn{
+    color:#fff;
+}
