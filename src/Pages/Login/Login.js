@@ -35,11 +35,11 @@ const Login = () => {
                         <div>
 
                             <Card className="login-card ">
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div className="col-md-5">
+                                <div className="login-img d-flex justify-content-between align-items-center">
+                                    <div className="col-md-5 col-12">
                                         <img src="https://iili.io/E2P0wg.jpg" alt="" className="img-fluid" />
                                     </div>
-                                    <div className="col-md-7 px-4 ">
+                                    <div className="col-md-7 col-12 px-4 ">
                                         <div className="text-center py-2">
                                             {isLogIn ? <h4>LogIn</h4> : <h4>Register</h4>}
 
