@@ -1,0 +1,27 @@
+.countup-section{
+    background-image: url('https://iili.io/EKJYZv.jpg');
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countup-card{
+    box-shadow: 0px 15px 25px -10px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+}
+.single-countup{
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.single-countup h1{
+    font-weight: 900;
+    color: #121827;
+}
+.single-countup h6{
+    color: #213058;
+}
